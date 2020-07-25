@@ -1,16 +1,19 @@
 /* tablets */
 @media(max-width: 800px){
     .navbar{
-        flex-direction: column;
-        height: 145px;
-        padding: 0px 20px 20px 20px;
         align-items: center;
     }
 
-    .navbar a{
-        padding: 1px 5px 3px 5px;
-        margin: 3px;
-        font-size: 1rem;
+    .navbar nav ul li{
+        display: none;
+    }
+
+    #menu-btn{
+        display: block;
+    }
+
+    #side-nav{
+        display: block;
     }
 
     #home{
@@ -31,18 +34,26 @@
 @media(max-width:500px){
     /* navbar */
     .navbar{
-        flex-direction: column;
-        height: 145px;
-        padding: 0px 20px 20px 20px;
         align-items: center;
     }
 
-    .navbar a{
-        padding: 1px 5px 3px 5px;
-        margin: 3px;
-        font-size: 0.6rem;
+    #menu-btn{
+        width: 40px;
+        right: 50px
     }
 
+    .navbar nav ul{
+        display: none;
+    }
+
+    #menu-btn{
+        display: block;
+    }
+
+    #side-nav{
+        display: block;
+    }
+    
     /* home */
     #home{
         height: 100vh;

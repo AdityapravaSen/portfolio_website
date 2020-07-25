@@ -19,19 +19,17 @@ window.onscroll = function () {
     }
 }
 
-// //smooth scrolling
-// $('#navbar a,.btn').on('click', function (e) {
-//     if (this.hash !== '') {
-//         e.preventDefault();
+//Responsive nav
+let menuBtn = document.getElementById("menu-btn");
+let sideNav = document.getElementById("side-nav");
 
-//         const hash = this.hash;
-
-//         $('html, body').animate(
-//             {
-//                 scrollTop: $(hash).Offset().top - 100,
-//             },
-//             800
-//         );
-//     }
-// });
+sideNav.style.right = "-250px";
+menuBtn.onclick = function () {
+    if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0px";
+    }
+    else {
+        sideNav.style.right = "-250px";
+    }
+}
 
