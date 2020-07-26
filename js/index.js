@@ -22,8 +22,10 @@ window.onscroll = function () {
 //Responsive nav
 let menuBtn = document.getElementById("menu-btn");
 let sideNav = document.getElementById("side-nav");
+let navLinks = document.querySelectorAll(".nav-links li");
 
 sideNav.style.right = "-250px";
+
 menuBtn.onclick = function () {
     if (sideNav.style.right == "-250px") {
         sideNav.style.right = "0px";
@@ -31,5 +33,14 @@ menuBtn.onclick = function () {
     else {
         sideNav.style.right = "-250px";
     }
-}
 
+    //animation
+    navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+            link.style.animation = '';
+        }
+        else {
+            link.style.animation = `navLinkFade ease ${index / 5 + 1.2}s`;
+        }
+    });
+}

@@ -115,6 +115,11 @@ img{
     background: #333;
     z-index: 2;
     transition: 0.5s ease-in-out;
+    font-size: 1.2rem;
+}
+
+#side-nav ul{
+    padding-top: 5rem;
 }
 
 #side-nav li{
@@ -130,6 +135,17 @@ img{
 #side-nav a:hover{
     border-bottom:#ffd700 2px solid;
     transition:0.5s ease;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 /* header */
@@ -173,7 +189,7 @@ img{
 }
 
 .hero *{
-    z-index: 10;
+    z-index:2;
 }
 
 .content i{
@@ -199,9 +215,8 @@ img{
 
 #about .bio-img{
     grid-area: bioimage;
-    padding-top: 20px;
+    padding: 20px;
     border-radius: 50%;
-    padding-right: 30px;
 }
 
 #about .bio{
@@ -236,6 +251,7 @@ img{
     font-family: 'Roboto' ,sans-serif;
     line-height: 2.8rem;
     padding-left: 30px;
+    padding-top: 50px;
 }
 
 .specialize{
