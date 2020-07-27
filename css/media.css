@@ -24,6 +24,10 @@
         padding-top: 5rem;
     }
 
+    .LI-profile-badge{
+        padding: 50px 0;
+    }
+
     /* projects */
     .items{
         grid-template-columns: repeat(2,1fr);
