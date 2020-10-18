@@ -8,6 +8,9 @@
     --btn-color:#3CC3AC;
     --font-color:#4E4D4D;
     --svg-color:#64A3D9;
+    --primary-color:#fff;
+    --secondary-color:#000;
+    --shadow-color:#e1e1e3;
 }
 
 /* reset */
@@ -17,6 +20,10 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+}
+
+body{
+    background-color: var(--primary-color);
 }
 
 img{
@@ -57,7 +64,7 @@ img{
     font-family: var(--roboto);
     font-size: 15px;
     line-height: 20px;
-    color: #4E4D4D;
+    color: var(--font-color);
 }
 
 input::placeholder, textarea::placeholder{
@@ -102,6 +109,42 @@ input::placeholder, textarea::placeholder{
     transition: 0.5s ease;
 }
 
+/* dark mode */
+#theme-options-wrapper{
+	display: flex;
+	padding: 20px;
+}
+
+.theme-dot{
+	height: 30px;
+	width: 30px;
+	background-color: black;
+	border-radius: 50%;
+
+	margin: 5px;
+	border:2px solid var(--themeDotBorder);
+
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+	cursor: pointer;
+}
+
+
+.theme-dot:hover{
+	border-width: 5px;
+}
+
+
+#light-mode{
+	background-color: #fff;
+}
+
+#dark-mode{
+	background-color: #202020;
+}
+
 .wrapper .sidebar .social-links{
     position: absolute;
     bottom: 0;
@@ -121,7 +164,7 @@ input::placeholder, textarea::placeholder{
 
 .wrapper .sidebar .social-links a:hover{
     transform: translateY(-5px);
-    color: #000;
+    color:var(--secondary-color);
     transition: 0.5s ease;
 }
 
@@ -145,7 +188,7 @@ input::placeholder, textarea::placeholder{
     position: fixed;
     left: -250px;
     top: 0;
-    background:#fff;
+    background:var(--primary-color);
     z-index: 2;
     transition: 0.5s ease-in-out;
     font-size: 1.2rem;
@@ -259,7 +302,7 @@ input::placeholder, textarea::placeholder{
 
 .showcase-1 h2, .showcase-2 h2{
     font-family: var(--roboto);
-    color: #000;
+    color: var(--secondary-color);
     font-size: 20px;
     line-height: 32px;
 }
@@ -288,7 +331,7 @@ input::placeholder, textarea::placeholder{
     text-align: center;
     margin: 3% auto 0 20%;
 
-    color: #4E4D4D;
+    color:var(--font-color);
 }
 
 .about h1, .work h1{
@@ -355,7 +398,7 @@ input::placeholder, textarea::placeholder{
 }
 
 .industry a{
-    color: rgb(26, 24, 24);
+    color: var(--secondary-color);
 }
 
 .industry a:hover{
@@ -371,10 +414,10 @@ input::placeholder, textarea::placeholder{
     text-align: center;
     margin: 3% auto 0 30%;
 
-    color: #4E4D4D;
+    color: var(--font-color);
 }
 
-.work svg{
+.work .svg{
     margin: 10% auto;
 }
 
@@ -416,8 +459,8 @@ input::placeholder, textarea::placeholder{
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius:16px;
     overflow:hidden;
-    -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-    box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+    -webkit-box-shadow:  15px 15px 27px var(--shadow-color), -15px -15px 27px var(--primary-color);
+    box-shadow:  15px 15px 27px var(--shadow-color), -15px -15px 27px var(--primary-color);
 }
 
 .property-image-1, .property-image-2, .property-image-3, .property-image-4
@@ -437,7 +480,7 @@ input::placeholder, textarea::placeholder{
 
 .property-description
 {
-  background-color: #FAFAFC;
+  background-color: var(--primary-color);
   height:12em;
   width:14em;
   position:absolute;
@@ -461,13 +504,7 @@ input::placeholder, textarea::placeholder{
 
 .property-card:hover .property-social-icons
 {
-  background-color:white;
-}
-
-.property-card:hover .property-social-icons:hover
-{
-  background-color:blue;
-  cursor:pointer;
+  background-color:var(--primary-color);
 }
 
 .property-image-2
