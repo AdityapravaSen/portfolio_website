@@ -40,11 +40,13 @@ function setTheme(mode) {
     if (mode == 'light') {
         document.getElementById('theme-style').href = 'css/style.css';
         document.getElementById('sidenav-logo').src = 'img/Signature-LogoBlack.png';
+        document.getElementById('coding-svg').src = 'img/Website_light.png';
     }
 
     if (mode == 'blue') {
         document.getElementById('theme-style').href = 'css/dark.css';
         document.getElementById('sidenav-logo').src = 'img/Signature-LogoWhite.png';
+        document.getElementById('coding-svg').src = 'img/Website_dark.png';
     }
 
     localStorage.setItem('theme', mode);

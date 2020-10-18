@@ -1,0 +1,13 @@
+:root{
+    --montserrat:'Montserrat', sans-serif;
+    --lora:'Lora', serif;
+    --roboto:'Roboto', sans-serif;
+    --ubuntu:'Ubuntu', sans-serif;
+
+    --btn-color:#17a2b8;
+    --font-color:#eeee;
+    --svg-color:#17a2b8;
+    --primary-color:#181818;
+    --secondary-color:#fff;
+    --shadow-color:#202020;
+}

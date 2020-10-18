@@ -18,6 +18,7 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <link rel="stylesheet" href="css/media.css">
 
     <!-- favicon-->
@@ -29,13 +30,17 @@
 <body>
     <div class="wrapper">
         <div class="sidebar">
-            <a href="index.html"><img src="img/Signature-LogoBlack.png" alt="signature"></a>
+            <a href="index.html"><img src="img/Signature-LogoBlack.png" alt="signature" id="sidenav-logo"></a>
             <ul>
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="work.html">Work</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div id="theme-options-wrapper">
+                <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                <div data-mode="blue" id="dark-mode" class="theme-dot"></div>
+            </div>
             <div class="social-links">
                 <a href="https://www.facebook.com/adityaprava.sen.9/" target="_blank"><i
                         class="fab fa-facebook-f"></i></a>
@@ -49,13 +54,18 @@
 
         <!-- burger nav -->
         <nav id="side-nav">
-            <a href="index.html"><img src="img/Signature-LogoBlack.png" alt="signature" class="side-nav_logo"></a>
+            <a href="index.html"><img src="img/Signature-LogoBlack.png" alt="signature" class="side-nav_logo"
+                    id="sidenav-logo"></a>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="work.html">Work</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div id="theme-options-wrapper">
+                <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                <div data-mode="blue" id="dark-mode" class="theme-dot"></div>
+            </div>
 
             <img src="img/menu.png" alt="menu" id="menu-btn">
         </nav>
